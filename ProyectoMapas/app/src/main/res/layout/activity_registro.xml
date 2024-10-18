@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="127dp"
+        android:orientation="horizontal"
+        android:background="#ecff33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mercadona">
+
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="410dp"
+        android:layout_marginBottom="180dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usuarioreg"
+            android:hint="Crear nombre de usuario"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:autofillHints="">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contrasenareg"
+            android:hint="Ingrese la contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:autofillHints="">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contrasenarep"
+            android:hint="Repita la contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:autofillHints="">
+
+        </EditText>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione su genero"
+            android:textStyle="bold">
+
+        </TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino">
+
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino">
+
+        </CheckBox>
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRegistrarse"
+            android:text="Registrarse"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
